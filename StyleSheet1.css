@@ -1200,8 +1200,8 @@ body {
 }
 
 .cookie-button--secondary {
-  background-color: #AE0000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #AE0000;
 }
 
 @media (max-width: 768px) {
@@ -1355,9 +1355,38 @@ body {
   color: #4E4540;
 }
 
-/* Cookie buttons equal visual weight */
+/* Index hero spacing and responsive image position fixes */
 
-.cookie-button--secondary {
-  background-color: #AE0000;
-  color: #ffffff;
+/* On smaller desktop widths, keep the hero image from drifting too far right. */
+@media (min-width: 769px) and (max-width: 1440px) {
+  :root {
+    --hero-image-shift-x: 120px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1180px) {
+  :root {
+    --hero-image-shift-x: 40px;
+  }
+}
+
+/* Mobile hero: move text slightly higher and reduce extra vertical space before the next section. */
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 72px;
+    gap: 58px;
+  }
+
+  .hero-text-section {
+    min-height: 465px;
+  }
+
+  .hero-text-content {
+    padding-top: 0;
+    transform: translateY(-38px);
+  }
+
+  .fixed-hero-image {
+    height: 565px;
+  }
 }
