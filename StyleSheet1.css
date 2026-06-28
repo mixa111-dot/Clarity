@@ -1200,8 +1200,8 @@ body {
 }
 
 .cookie-button--secondary {
-  background-color: #ffffff;
-  color: #AE0000;
+  background-color: #AE0000;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -1355,6 +1355,13 @@ body {
   color: #4E4540;
 }
 
+/* Cookie buttons equal visual weight */
+
+.cookie-button--secondary {
+  background-color: #AE0000;
+  color: #ffffff;
+}
+
 /* Index hero spacing and responsive image position fixes */
 
 /* On smaller desktop widths, keep the hero image from drifting too far right. */
@@ -1370,23 +1377,58 @@ body {
   }
 }
 
-/* Mobile hero: move text slightly higher and reduce extra vertical space before the next section. */
+/* Mobile/Telegram fix: keep the promo bar in the normal page flow
+   so the hero text does not slide underneath it while scrolling. */
 @media (max-width: 768px) {
+  .promo-bar {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
   .main-content {
-    padding-top: 72px;
-    gap: 58px;
+    padding-top: 24px;
+    gap: 56px;
   }
 
   .hero-text-section {
-    min-height: 465px;
+    min-height: 510px;
   }
 
   .hero-text-content {
     padding-top: 0;
-    transform: translateY(-38px);
+    transform: none;
   }
 
   .fixed-hero-image {
-    height: 565px;
+    height: 590px;
+  }
+}
+
+/* Mobile section divider fix */
+
+@media (max-width: 768px) {
+  .moment-section {
+    padding-top: 34px;
+  }
+}
+
+/* Mobile fixed promo bar fix */
+
+@media (max-width: 768px) {
+  .promo-bar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 9999;
+  }
+
+  .main-content {
+    padding-top: calc(var(--promo-bar-height) + 24px);
+  }
+
+  .fixed-hero-image {
+    top: var(--promo-bar-height);
   }
 }
