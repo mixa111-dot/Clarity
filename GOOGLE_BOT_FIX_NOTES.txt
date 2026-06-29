@@ -1,0 +1,10 @@
+Google/Lighthouse fixes included:
+
+1. Added meta descriptions to all HTML pages.
+2. Added robots.txt and sitemap.xml.
+3. Improved contrast for slider captions and footer disclosure text.
+4. Replaced visible popup-opening labels with buttons to avoid multiple-label warnings.
+5. Changed hidden slider radio controls to display:none so Lighthouse no longer treats them as visible unlabeled form controls.
+6. Added popup open/close JavaScript for the new button-based popup controls.
+
+Note: robots.txt cannot be properly tested from file:// in Lighthouse. Upload the folder to hosting or run it through a local server before checking that audit.

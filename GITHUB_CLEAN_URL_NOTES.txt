@@ -1,0 +1,12 @@
+Clean URL structure for GitHub Pages:
+
+- Home page: index.html stays in the repository root, so the browser shows only the domain.
+- Other pages are folders with index.html inside:
+  /about/
+  /gemstone-craftsmanship-guide/
+  /privacy-policy/
+  /terms-and-conditions/
+
+Do not upload the old root files about.html, privacy-policy.html, terms-and-conditions.html, or gemstone-craftsmanship-guide.html if you want URLs without .html.
+
+Upload this ZIP contents directly into the repository root.

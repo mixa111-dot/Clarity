@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Our Project - Clarity</title>
+
+  <link rel="shortcut icon" href="../Images/Favicon.svg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #AE0000;
+  --ink: #251812;
+  --body: #4E4540;
+  --muted: rgba(128, 117, 112, 0.75);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--body);
+  background: #ffffff;
+}
+
+.legal-page {
+  min-height: 100vh;
+  padding: 84px 64px 96px;
+}
+
+.legal-container {
+  width: min(860.4px, 100%);
+  margin: 0 auto;
+}
+
+.legal-red-line {
+  width: 38.4px;
+  height: 1.6px;
+  margin: 0 0 25.6px;
+  background-color: var(--red);
+}
+
+.legal-title {
+  margin: 0;
+
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(42px, 5vw, 76.8px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+.legal-subtitle {
+  margin: 18px 0 0;
+
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(24px, 2.5vw, 38px);
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+.legal-updated {
+  margin: 18px 0 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--muted);
+}
+
+.legal-intro {
+  margin: 42px 0 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+
+  color: var(--body);
+  text-wrap: pretty;
+}
+
+.legal-intro + .legal-intro {
+  margin-top: 18px;
+}
+
+.legal-section {
+  margin: 38px 0 0;
+}
+
+.legal-section h2 {
+  margin: 0;
+
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(28px, 2.5vw, 42px);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+.legal-section h3 {
+  margin: 24px 0 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+
+  color: var(--ink);
+}
+
+.legal-section p {
+  margin: 14px 0 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+
+  color: var(--body);
+  text-wrap: pretty;
+}
+
+.legal-link {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--ink);
+  text-underline-offset: 3px;
+}
+
+.legal-footer {
+  margin: 64px 0 0;
+  padding-top: 28px;
+
+  border-top: 1px solid rgba(37, 24, 18, 0.12);
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 28px;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--muted);
+}
+
+.legal-footer a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--ink);
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  .legal-page {
+    padding: 72px 24px 72px;
+  }
+
+  .legal-container {
+    width: 100%;
+  }
+
+  .legal-red-line {
+    width: 36px;
+    height: 1.5px;
+    margin-bottom: 22px;
+  }
+
+  .legal-title {
+    font-size: 46px;
+    line-height: 50px;
+  }
+
+  .legal-subtitle {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .legal-updated {
+    margin-top: 16px;
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  .legal-intro {
+    margin-top: 34px;
+    font-size: 14.5px;
+    line-height: 24px;
+  }
+
+  .legal-section {
+    margin-top: 34px;
+  }
+
+  .legal-section h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .legal-section h3 {
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  .legal-section p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .legal-footer {
+    margin-top: 52px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <main class="legal-page">
+    <article class="legal-container">
+      <div class="legal-red-line"></div>
+
+      <h1 class="legal-title">About Our Project</h1>
+      <p class="legal-subtitle">Fine jewellery, edited with intention.</p>
+
+      <p class="legal-intro">
+        This project was created as an independent editorial guide for people who want to choose fine jewellery with more clarity and less noise.
+      </p>
+
+      <p class="legal-intro">
+        The online jewellery market is full of beautiful pieces, but the experience of choosing one can quickly become overwhelming. Endless product pages, similar-looking designs, unclear value signals and competing claims make it difficult to understand what is actually worth your attention.
+      </p>
+
+      <p class="legal-intro">
+        We exist to make that process quieter.
+      </p>
+
+      <p class="legal-intro">
+        Our role is simple: we filter, compare and narrow down the options, then organize our recommendations around real moments and real reasons to choose. Instead of asking you to scroll through hundreds of pieces, we create concise edits that help you understand what fits the occasion, the intention and the feeling behind the gift.
+      </p>
+
+      <section class="legal-section">
+        <h2>Our Mission</h2>
+        <p>
+          Jewellery is rarely just about the object itself. It is often chosen for a moment: an unexpected gesture, a personal symbol, a polished impression, an apology, an engagement, or a serious step in a relationship.
+        </p>
+        <p>
+          Our mission is to make those choices easier to navigate.
+        </p>
+        <p>
+          We review fine jewellery collections with an editorial eye, looking for pieces that feel considered, refined and appropriate for the context in which they may be given or worn. The goal is not to overwhelm you with every possible option. It is to remove the excess and leave a focused selection that feels easier to trust.
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2>How We Curate</h2>
+        <p>
+          Our curation is based on design, context and practical relevance.
+        </p>
+        <p>
+          We look at each piece not only as a product, but as part of a larger decision: who it may be for, what kind of moment it fits, and whether it carries the right level of care.
+        </p>
+        <p>
+          We consider:
+        </p>
+
+        <h3>Design and proportion</h3>
+        <p>
+          We look for pieces with balance, clarity and visual restraint. The strongest jewellery does not need to be loud to feel meaningful.
+        </p>
+
+        <h3>Material and gemstone expression</h3>
+        <p>
+          We pay attention to how metals, stones, colour, scale and setting work together. A piece should feel coherent, not simply expensive.
+        </p>
+
+        <h3>Wearability and versatility</h3>
+        <p>
+          A strong recommendation should make sense beyond a single photograph. We favour pieces that can live naturally within someone’s style, whether they are minimal, classic, romantic or more expressive.
+        </p>
+
+        <h3>Context and intention</h3>
+        <p>
+          The same piece can feel very different depending on the moment. That is why we organize our edits around intent rather than only category, price or trend.
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2>Independence and Transparency</h2>
+        <p>
+          This platform operates as an independent editorial guide. We are not owned, operated or directly managed by the jewellery brands, manufacturers or retailers featured in our selections.
+        </p>
+        <p>
+          To keep our guides free to access, we may participate in affiliate marketing programs. This means that when you click on a recommended piece and make a purchase on a partner merchant’s website, we may earn a referral commission. This does not add any extra cost to you.
+        </p>
+        <p>
+          Affiliate partnerships do not change the purpose of our curation. We aim to feature pieces that fit the aesthetic, contextual and practical standards of each edit. Our role is to help narrow the search, not to reproduce the noise of the market.
+        </p>
+        <p>
+          Thank you for exploring our selections. We hope this guide helps you choose with more confidence, less pressure and a clearer sense of the moment behind the piece.
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2>Contact</h2>
+        <p>
+          If you have any questions, stylistic inquiries or feedback, feel free to reach out to our editorial team at: <a href="mailto:clarity.support.can@gmail.com" class="legal-link">clarity.support.can@gmail.com</a>
+        </p>
+      </section>
+
+      <footer class="legal-footer">
+        <span>Clarity</span>
+        <a href="../">Back to main page</a>
+        <a href="../gemstone-craftsmanship-guide/">Gemstone Guide</a>
+        <a href="../privacy-policy/">Privacy Policy</a>
+        <a href="../terms-and-conditions/">Terms &amp; Conditions</a>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
