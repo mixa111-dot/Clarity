@@ -1432,3 +1432,23 @@ body {
     top: var(--promo-bar-height);
   }
 }
+/* Section 1 small-device heading adaptation */
+
+.main-heading-line {
+  display: inline;
+}
+
+@media (max-width: 389px) {
+  .main-heading {
+    font-size: clamp(30px, 9.1vw, 35px);
+    line-height: 1.08;
+  }
+
+  .main-heading-line {
+    display: block;
+  }
+
+  .hero-text-content {
+    max-width: 100%;
+  }
+}
